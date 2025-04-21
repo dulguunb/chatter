@@ -1,0 +1,14 @@
+syntax = "proto3";
+package chatter_list;
+
+message ListUsersResponse {
+    repeated string username = 1;
+    repeated bool available = 2;
+}
+message ListUsersRequest {
+    string username = 1;
+}
+
+service ListUsersRequestService {
+    rpc SendRequest (ListUsersRequest) returns (ListUsersResponse);
+}
