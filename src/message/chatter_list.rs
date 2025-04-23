@@ -75,7 +75,7 @@ pub mod list_users_request_service_client {
         }
         /// Compress requests with the given encoding.
         ///
-        /// This requires the service to support it otherwise it might respond with an
+        /// This requires the server to support it otherwise it might respond with an
         /// error.
         #[must_use]
         pub fn send_compressed(mut self, encoding: CompressionEncoding) -> Self {
@@ -135,7 +135,7 @@ pub mod list_users_request_service_client {
         }
     }
 }
-/// Generated service implementations.
+/// Generated server implementations.
 pub mod list_users_request_service_server {
     #![allow(
         unused_variables,
@@ -144,8 +144,6 @@ pub mod list_users_request_service_server {
         clippy::wildcard_imports,
         clippy::let_unit_value,
     )]
-
-    use std::vec;
     use tonic::codegen::*;
     /// Generated trait containing gRPC methods that should be implemented for use with ListUsersRequestServiceServer.
     #[async_trait]
